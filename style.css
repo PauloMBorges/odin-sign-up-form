@@ -1,3 +1,7 @@
+:root {
+    --deep-chestnut: #B84D47;
+}
+
 /* CSS Reset */
 *,
 *::before,
@@ -6,4 +10,92 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+    color: black;
+    /* Add spacing between HTML anchor tags */
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/* fonts */
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./fonts/Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: "Monsterrat Bold";
+    src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Monsterrat Regular";
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+
+/* General styling */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* Left side styling */
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the credits to the bottom */
+    background-image: url(./images/kelli-mcclintock-o0NLiNny9-M-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 33vw;
+}
+
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 20vh;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.company-logo {
+    width:  20%;
+    height: auto;
+    align-self: flex-start;
+
+}
+
+.company-title {
+    color: black;
+    font-family: 'Norse Bold', sans-serif;
+    font-family: 'Monsterrat Bold', sans-serif;
+    font-size: 7rem;
+}
+
+.credits {
+    color: black;
+    font-family: 'Monsterrat Regular';
+    font-size: 1rem;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 0.5rem;
+
+}
+
 
