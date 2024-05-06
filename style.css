@@ -1,5 +1,6 @@
 :root {
     --deep-chestnut: #B84D47;
+    --off-white: #FAF9F6;
 }
 
 /* CSS Reset */
@@ -10,14 +11,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-a {
-    color: black;
-    /* Add spacing between HTML anchor tags */
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
 
 /* fonts */
 @font-face {
@@ -35,6 +28,10 @@ a {
     src: url("./fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Monsterrat Medium";
+    src: url("./fonts/Montserrat-Medium.ttf");
+}
 
 /* General styling */
 
@@ -61,8 +58,15 @@ a {
     width: 33vw;
 }
 
+.credits > a {
+    color: black;
+    /* Add spacing between HTML anchor tags */
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 .black-bg {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
     margin-top: 20vh;
     padding: 1rem;
 
@@ -80,7 +84,7 @@ a {
 }
 
 .company-title {
-    color: black;
+    color: #111827;;
     font-family: 'Norse Bold', sans-serif;
     font-family: 'Monsterrat Bold', sans-serif;
     font-size: 7rem;
@@ -100,20 +104,120 @@ a {
 
 
 /* Right side styling */
+
+
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     height: 100vh;
-    max-width: 66vw;
+    width: 67vw;
+    background-color: rgb(255, 253, 253); 
+}
+
+/* main text */
+.text-container {
+    margin-bottom: 6rem;
+    margin-left: 3rem;
 }
 
 .main-text {
     width: 50vw;
     font-weight: 500;
-    margin-left: 3rem;
 }
 
 .secondary-text {
     margin-top: 1rem;
 }
+
+/* form */
+
+.form-container {
+    width: 67vw;
+    box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.single-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-form > label {
+    font-family: "Monsterrat Medium";
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.single-form > input {
+    padding: 6px 8px;
+    border: 1px solid #E5E7EB;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 18rem;
+    margin-bottom: 1.125rem;
+    
+}
+
+.single-form > input:focus {
+    outline: none; /* removes default focus black border */
+    border: 1px solid blue;
+    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.single-form > input:invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+.form-container {
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-container > h2 {
+    margin-bottom: 1.5rem;
+}
+
+.form-div {
+    display: flex;
+    gap: 5.25rem;
+}
+
+/* button/footer styling */
+
+.right > p {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+button {
+    margin-left: 3rem;
+    background-color: #111827;
+    color: white;
+    font-family: "Monsterrat Bold", sans-serif;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 1rem 3rem;
+    cursor:pointer;
+    width: 17rem;
+    border: none;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em black;
+    transform: translateY(-0.15em);
+} 
+
+.login-link {
+    color: #272011;
+    font-weight: 1000;
+    text-decoration-color: #464646;
+}
+
+.btn {
+    border: none;   
+}
+
