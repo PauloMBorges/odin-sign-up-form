@@ -43,6 +43,7 @@ a {
     flex-direction: row;
     width: 100vw;
     height: 100vh;
+    font-family: 'Monsterrat Regular';
 }
 
 
@@ -87,7 +88,6 @@ a {
 
 .credits {
     color: black;
-    font-family: 'Monsterrat Regular';
     font-size: 1rem;
     font-weight: 500;
 
@@ -96,4 +96,24 @@ a {
     
     margin-bottom: 0.5rem;
 
+}
+
+
+/* Right side styling */
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 66vw;
+}
+
+.main-text {
+    width: 50vw;
+    font-weight: 500;
+    margin-left: 3rem;
+}
+
+.secondary-text {
+    margin-top: 1rem;
 }
