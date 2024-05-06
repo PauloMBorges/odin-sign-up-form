@@ -1,8 +1,3 @@
-:root {
-    --deep-chestnut: #B84D47;
-    --off-white: #FAF9F6;
-}
-
 /* CSS Reset */
 *,
 *::before,
@@ -13,11 +8,6 @@
 }
 
 /* fonts */
-@font-face {
-    font-family: "Norse Bold";
-    src: url("./fonts/Norse-Bold.otf");
-}
-
 @font-face {
     font-family: "Monsterrat Bold";
     src: url("./fonts/Montserrat-Bold.ttf");
