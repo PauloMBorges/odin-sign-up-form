@@ -157,7 +157,14 @@
     border-radius: 4px;
     width: 18rem;
     margin-bottom: 1.125rem;
-    
+}
+
+#password {
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
 }
 
 .single-form > input:focus {
@@ -183,6 +190,12 @@
 .form-div {
     display: flex;
     gap: 5.25rem;
+}
+
+#match {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0;
 }
 
 /* button/footer styling */
@@ -220,4 +233,3 @@ button:hover {
 .btn {
     border: none;   
 }
-
